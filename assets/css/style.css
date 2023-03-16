@@ -85,6 +85,34 @@ font-size: 40px;
     margin-bottom: 25px;
 }
 
+footer h2{
+    font-size: 40px;
+}
+
+.contact{
+   margin: 30px 50px 20px 50px; 
+}
+
+.contact-me{
+    border-right-style: solid;
+    margin-right: 15px;
+}
+
+.contact-me-title{
+    margin-right: 35px;
+    margin-bottom: 25px;
+}
+
+.list ul{
+    display: flex;
+}
+
+.list ul li{
+    margin-right: 25px;
+    margin-left: 25px;
+    font-size: 25px;
+}
+
 .banner{
     background-image:url("https://img.freepik.com/free-photo/abstract-grunge-decorative-relief-navy-blue-stucco-wall-texture-wide-angle-rough-colored-background_1258-28311.jpg?w=2000");
     background-repeat: no-repeat;
@@ -93,16 +121,14 @@ font-size: 40px;
 }
 
 .container{
-    max-width: 1200px;
     width: 100%;
     flex-wrap: wrap;
-    justify-content: center;
-    flex-direction: row;
     position: relative;
 }
 
 .container img{
     padding:5px;
+    border: 5px solid #3366ff;
 }
 
 .container img:hover{
@@ -112,26 +138,19 @@ font-size: 40px;
 }
 
 .container h2{
-position: absolute;
-top:500px;
-right:900px;
+position: relative;
+top: -180px;;
+right: 710px;;
 background-color: #3366ff;
 font-size: 30px;
 color: white;
 padding: 5px;
+display: inline;
 }
 
 .card{
-    border: 5px solid #3366ff;
-    padding: 5px
-}
-
-.card:first-child{
-    width: 100%;
-    border: 5px solid #3366ff;
-}
-
-.card:not(:first-child) {
-    flex: 1;
     
+    padding: 5px;
+    margin: 25px;
 }
+
