@@ -1,3 +1,8 @@
+
+.flex{
+    display: flex;
+}
+
 nav{
     height: 80px;
     width: 100%;
@@ -33,7 +38,7 @@ a:hover{
     color: #3366ff;
 }
 
-main.container{
+main.main{
     position: relative;
 }
 
@@ -48,8 +53,36 @@ main h1{
     right: 25px;
 }
 
-main.h2{
-font-size: 35px;
+main h2{
+font-size: 40px;
+}
+
+.about{
+    margin: 30px 50px 20px 50px;
+}
+
+.about-me{
+    border-right-style: solid;
+    margin-right: 15px;
+}
+
+.about-me-title{
+    margin-right: 20px;
+    margin-bottom: 25px;
+}
+
+.work{
+    margin: 30px 50px 20px 50px;
+}
+
+.work-title{
+    border-right-style: solid;
+    margin-right: 15px;
+}
+
+.work-title-me{
+    margin-right: 35px;
+    margin-bottom: 25px;
 }
 
 .banner{
@@ -59,12 +92,46 @@ font-size: 35px;
     height: 200px;
 }
 
-.about{
-margin: 30px 50px 20px 50px;
+.container{
+    max-width: 1200px;
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: center;
+    flex-direction: row;
+    position: relative;
 }
 
-.about-me{
-border-right: solid;
-margin-right: 15px;
+.container img{
+    padding:5px;
 }
 
+.container img:hover{
+    opacity: 0.5;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.container h2{
+position: absolute;
+top:500px;
+right:900px;
+background-color: #3366ff;
+font-size: 30px;
+color: white;
+padding: 5px;
+}
+
+.card{
+    border: 5px solid #3366ff;
+    padding: 5px
+}
+
+.card:first-child{
+    width: 100%;
+    border: 5px solid #3366ff;
+}
+
+.card:not(:first-child) {
+    flex: 1;
+    
+}
